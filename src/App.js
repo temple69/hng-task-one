@@ -1,12 +1,14 @@
-import Links from "./components/Links/Links";
-import Profile from "./components/Profile/Profile";
+import Contact from "./Pages/Contact/Contact";
+import {Route,Routes} from 'react-router-dom'
+import Home from "./Pages/Home/Home";
 
 
 function App() {
-    return (  
-        <>
-        <Profile/>
-        <Links/>
+    return ( <>
+        <Routes>
+            <Route path="/" element={<Home/>}></Route>
+            <Route path="/contact" element={<Contact/>}></Route>
+        </Routes>
         </>
     );
 }
