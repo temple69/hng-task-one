@@ -1,0 +1,77 @@
+.formContainer {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    display: grid;
+    padding: 0 4em;
+    align-items: center;
+}
+
+.formContainer>h2 {
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+.formContainer>p {
+    font-weight: 400;
+    padding-bottom: 1em;
+}
+
+.formContainer>form>label>textarea,
+.formContainer>form>fieldset>label>input,
+.formContainer>form>label>input[type="email"],
+.formContainer>form>button {
+    display: block;
+    height: 50px;
+    padding-left: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    margin: .8em 0;
+    border: 1px solid #D0D5DD;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    color: #667085;
+    font-size: 18px;
+}
+
+.formContainer>form>button {
+    color: white;
+    background: #1570EF;
+    font-weight: 600;
+}
+
+.formContainer>form>label>textarea {
+    height: 150px;
+    padding: 1em;
+}
+
+.formContainer>form>fieldset>label,
+.formContainer>form>label {
+    font-weight: 500;
+}
+
+.formContainer>form>fieldset {
+    display: grid;
+    justify-content: space-between;
+    border: 0;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 2em;
+}
+
+#chkbox {
+    font-weight: 400;
+    color: #667085;
+}
+
+.red {
+    color: #F83F23;
+}
+
+.red_border {
+    border: 1px solid #F89687!important;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #FFD3CC;
+}
+
+.blue_border {
+    border: 1px solid #84CAFF!important;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #D1E9FF;
+}
