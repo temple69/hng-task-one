@@ -3,7 +3,7 @@ import './contact.css'
 
 
 const Contact = () => {
-    const [messageState,setMessage]= useState(false)
+    const [messageState,setMessage]= useState(true)
     const [emailState,setEmailState]= useState(false)
     const emailref = useRef('')
     const messageref = useRef('')
